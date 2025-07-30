@@ -7,14 +7,14 @@ num2 = float(input("Enter second number: "))
 
 match operator:
     case "+":
-        print(f"{num1} + {num2} = {num1 + num2}")
+        print(f"{num1} + {num2} = {round(num1 + num2, 2)}")
     case "-":
-        print(f"{num1} - {num2} = {num1 - num2}")
+        print(f"{num1} - {num2} = {round(num1 - num2, 2)}")
     case "*":
-        print(f"{num1} * {num2} = {num1 * num2}")
+        print(f"{num1} * {num2} = {round(num1 * num2, 2)}")
     case "/":
         if num2 != 0:
-            print(f"{num1} / {num2} = {num1 / num2}")
+            print(f"{num1} / {num2} = {round(num1 / num2, 2)}")
         else:
             print("Error! Division by zero is not allowed.")
     case _:
