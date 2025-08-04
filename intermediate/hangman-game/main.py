@@ -1,6 +1,5 @@
+from wordlist import words
 import random
-
-words = ("apple", "orange", "banana", "coconut", "pineapple")
 
 hangman_art = {
     0: ("   ",
@@ -77,7 +76,7 @@ def main():
             display_answer(answer)
             print("Congratulations, you won!")
             is_running = False
-        elif wrong_guesses == 6:
+        elif wrong_guesses == len(hangman_art) - 1:
             display_man(wrong_guesses)
             display_answer(answer)
             print("Game over, you lost!")
