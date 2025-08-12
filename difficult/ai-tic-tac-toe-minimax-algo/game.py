@@ -93,13 +93,13 @@ def play(game: TicTacToe, x_player, o_player, print_game: bool = True):
         else:
             square = x_player.get_move(game)
 
-        if type(x_player) == GeniusComputerPlayer and letter == 'X':
+        if type(x_player) == GeniusComputerPlayer and letter == 'X' and print_game:
             print("****** THINKING ********")
             time.sleep(2)
             print("**** MAKING A MOVE *****")
             time.sleep(0.5)
 
-        elif type(o_player) == GeniusComputerPlayer and letter == 'O':
+        elif type(o_player) == GeniusComputerPlayer and letter == 'O' and print_game:
             print("****** THINKING ********")
             time.sleep(2)
             print("**** MAKING A MOVE *****")
